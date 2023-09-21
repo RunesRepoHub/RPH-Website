@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Docker Swarm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="overskift">
+  <h1>Project Docker Swarm</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <h1>Links and Sources:</h1>
+    <div class="links">
+    <a href="https://swarmpit.io/">SwarmPit</a>
+    <a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a>
+    <a href="https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/">Nginx Docker</a>
+    <a href="https://github.com/jc21/docker-registry-ui">Docker Registry with WebGUI</a>
+    <a href="/pdf/Cloudflare-Tunnel-Setup.pdf">Cloudflare Tunnel Setup</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <h1>Project Docker Swarm</h1>
+    <h2>A Cluster of 3 Linux servers running Docker in a Swarm Cluster with SwarmPit as WebGUI.</h2>
+    <br>
+    <video class="project-video" controls>
+      <source src="/videos/Docker-Dev-Env.webm" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <img src="/Pictures/logo.png" alt="Artwork">
+    <p>This was made in order to make it easier for me to manage my docker infrastructur, and to make Development and Deployment of new/homemade Docker containers easier for me. This is both in a context of maintaining Dockers already deployed but also testing of newly made Dockers and also having the option to rollback to the last config for the Dockers if and update went wrong.</p>
+      <h2> I will add some more information and guides soon</h2>
+
+  </div>
+
+  <div class="right">
+    <h2>Requirements</h2>
+    <button class="accordion">Automation</button>
+    <div class="panel">
+      <p> - 3 Linux Servers </p>
+      <p> - Installed Docker on all 3 servers</p>
+      <p> - Installed SwarmPit on the Docker Swarm</p>
+      <p> - Cloudflare Tunnel Setup and Configured</p>
+      <p> - Local Docker Registry with WebGUI</p>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="footer">Hosted By RPH</div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+</body>
+</html>
+

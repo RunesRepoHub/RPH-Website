@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="overskift">
+  <h1>Christian Rune</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+  </nav>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <h1>My Socials</h1>
+    <div class="links">
+    <a href="https://github.com/rune004?tab=repositories">My Github</a>
+    <a href="https://www.linkedin.com/in/christian-rune-dk/">My Linkedin</a>
+    </div>
+    <h1>Useful links</h1>
+    <div class="links">
+    <a href="https://linuxize.com/">linuxize</a>
+    <a href="https://www.thegeeksearch.com/">thegeeksearch</a>
+    <a href="https://stackoverflow.com/">stackoverflow</a>
+    <a href="https://linuxhint.com/">linuxhint</a>
+    <a href="https://bash.cyberciti.biz/guide/Main_Page">bash.cyberciti.biz</a>
+    <a href="https://www.shell-tips.com/#gsc.tab=0">shell-tips</a>
+    </div>
+    
+    <h1>Guides</h1>
+    <p>Coming Soon</p>
+  </div>
+
+  <div class="main">
+    <h1>Deployment and Development Portfolio</h1>
+    <br>
+    <div class="products-box">
+    <article>
+    <h2>Project Docker Swarm</h2>
+    <img src="/Pictures/dockerswarm_logo-300x300.png" alt="dockerswarm_logo">
+    <p>A Cluster of 3 Linux servers running Docker in a Swarm Cluster with SwarmPit as WebGUI. </p>
+    <a href="/projects/project-docker-swarm.html">Learn More</a>
+    </article>
+    </div>
+
+    <br>
+
+    <div class="products-box">
+    <article>
+    <h2>Project CnC BASH Script</h2>
+    <img src="/Pictures/bash-1.svg" alt="bash-1.svg">
+    <p>A BASH script made for making Command and Control of a Linux Infrastructur easier.</p>
+    <a href="#">Learn More</a>
+    </article>
+    </div>
+
+    <br>
+
+    <div class="products-box">
+    <article>
+    <h2>Project Proxmox Self Hosting</h2>
+    <img src="/Pictures/proxmox-logo.webp" alt="proxmox-logo">
+    <p>The never ending quest to self-hosting everything.</p>
+    <a href="#">Learn More</a>
+    </article>
+    </div>
+
+    <br>
+
+    <div class="products-box">
+    <article>
+    <h2>Project Ansible Automation</h2>
+    <img src="/Pictures/ansible.svg" alt="ansible.svg">
+    <p>The never ending quest to automate everything.</p>
+    <a href="#">Learn More</a>
+    </article>
+    </div>
+  </div>
+
+  <div class="right">
+    <h2>About Me</h2>
+    <button class="accordion">Automation</button>
+    <div class="panel">
+    <p>I have spent a lot of time, doing automation on many levels, from automated template creation for excel and Word to automated deployment for virtuel machines. IaC (infrastructur as code): I have a dream for making, planning and deploying a IaC company of my own, that hosts virtuel machines, game servers and full virtuel environments.</p>
+    </div>
+
+    <button class="accordion">Ansible</button>
+    <div class="panel">
+    <p>I have automated deployment of the VM's and dockers on that Proxmox Cluster via web hooks, and I am planning to automate deployment of VM fully configurable via input from a webhook this includes user creation, port configuration, docker containers deployment and hostname change and so on.</p>
+    </div>
+
+    <button class="accordion">Docker/Portainer</button>
+    <div class="panel">
+    <p>I have setup and configured 100s of docker containers from all the world of dockers have to offer, I have used docker-compose and portainer to setup and manage the docker containers. I have also done a bit of automation in ansible for quicker deployment.</p>
+    </div>
+
+    <button class="accordion">Cloudflare</button>
+    <div class="panel">
+    <p>I have used Cloudflare for hosting my domains for 4 years and have become very familiar with their products and deployment for those products. I have also worked with best security practices on Cloudflare and how to best use their services to protect an infrastructur.</p>
+    </div>
+
+    <button class="accordion">Servers/OS</button>
+    <div class="panel">
+    <p>I have played with deployment of windows server, docker containers, ubuntu servers, centos servers, fedora servers.</p>
+    </div>
+
+    <button class="accordion">Coding</button>
+    <div class="panel">
+    <p>I can code in html, bash, css, php, vbs, javascript, yaml and java. I have also worked alot in wordpress and wordpress plugins so I am pretty well trained in it.</p>
+    </div>
+
+    <button class="accordion">Proxmox VE & backup server</button>
+    <div class="panel">
+    <p>I have setup and configured a Proxmox Cluster with ceph Cluster and HA (high availability) with a Proxmox Backup Server for backups. I have also worked with Proxmox firewall and Pfsense as a virtual enviroment with direct access to the LAN via physical networking equipment.</p>
+    </div>
+
+    <button class="accordion">My motto is the six p's.</button>
+    <div class="panel">
+    <p>Proper, planning, prevents, piss, poor, performance.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">Hosted By RPH</div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+</body>
+</html>
+
