@@ -7,10 +7,10 @@ on:
     branches: [ "Dev" ]
 
 jobs:
-
+  
   build:
 
-    runs-on: [self-hosted, linux]
+    runs-on: [ubuntu:latest, self-hosted]
 
     steps:
     - uses: actions/checkout@v3
