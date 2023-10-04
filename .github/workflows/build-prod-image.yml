@@ -3,8 +3,7 @@ name: Docker Image Build Prod Version
 on:
   push:
     branches: [ "Production" ]
-  pull_request:
-    branches: [ "Production" ]
+
 
 jobs:
   
