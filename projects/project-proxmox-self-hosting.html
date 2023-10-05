@@ -14,25 +14,26 @@
   <div class="menu">
     <h1>Links and Sources:</h1>
     <div class="links">
-    <a href="https://swarmpit.io/">SwarmPit</a>
-    <a href="https://docs.docker.com/engine/swarm/">Docker Swarm</a>
-    <a href="https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/">Nginx Docker</a>
-    <a href="https://github.com/jc21/docker-registry-ui">Docker Registry with WebGUI</a>
-    <a href="/pdf/Cloudflare-Tunnel-Setup.pdf">Cloudflare Tunnel Setup</a>
+    <a href="#">SwarmPit</a>
+    <a href="#">Docker Swarm</a>
+    <a href="#">Nginx Docker</a>
+    <a href="#">Docker Registry with WebGUI</a>
+    <a href="#">Cloudflare Tunnel Setup</a>
     </div>
   </div>
 
   <div class="main">
-    <h1>Project Docker Swarm</h1>
-    <h2>A Cluster of 3 Linux servers running Docker in a Swarm Cluster with SwarmPit as WebGUI.</h2>
+    <h1>Project Proxmox Self Hosting</h1>
+    <h2>A Cluster of 4 Linux servers running Proxmox in a Cluster with shared storage to give HA.</h2>
     <br>
     <video class="project-video" controls>
-      <source src="/videos/Docker-Dev-Env.webm" type="video/mp4">
+      <source src="#" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <img src="/Pictures/logo.png" alt="Artwork">
-    <p>This was made in order to make it easier for me to manage my docker infrastructur, and to make Development and Deployment of new/homemade Docker containers easier for me. This is both in a context of maintaining Dockers already deployed but also testing of newly made Dockers and also having the option to rollback to the last config for the Dockers if and update went wrong.</p>
-      <h2> I will add some more information and guides soon</h2>
+    <img src="#" alt="Artwork">
+    <p>I have run private servers for the better part of 7-8 years, and I want to challange myself in new areas. I also wanted to have a more reduntend system, so a host server reboot or failure would not take down all my services. But I wanted this to be seemless with as little downtime as possible.</p>
+    <p>I went with Proxmox, this is mainly due to the full accessablity to their OS's from the "free" version. This includes the Proxmox Virtuel Enviroment (PVE) + Proxmox Backup Server (PBS) + Proxmox Mail Server (PMS), this makes it easy to go from a free deployment of the systems to a enterprise deployment with a cost only when the systems work. This for me is a big thing, because I like to add and remove servers and don't want to pay everytime I want to test a new system or setup.</p>
+    
 
   </div>
 
@@ -40,11 +41,10 @@
     <h2>Requirements</h2>
     <button class="accordion">Automation</button>
     <div class="panel">
-      <p> - 3 Linux Servers </p>
-      <p> - Installed Docker on all 3 servers</p>
-      <p> - Installed SwarmPit on the Docker Swarm</p>
-      <p> - Cloudflare Tunnel Setup and Configured</p>
-      <p> - Local Docker Registry with WebGUI</p>
+      <p> - 4 Proxmox Servers </p>
+      <p> - 1 Proxmox Backup Server</p>
+      <p> - 1 Unraid Server (For Shared Storage)</p>
+      <p> - 1 Proxmox Server has Tailscale Configured as Exit Node (For remote VPN access)</p>
     </div>
 
 
