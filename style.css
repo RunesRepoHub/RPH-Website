@@ -83,6 +83,10 @@ img {
   padding: 0 20px;
   text-align: center;
   border-radius: 25px;
+  background-image: url('/Pictures/Contrastbox.png');
+  background-size: contain; /* You can set the size as you prefer */
+  background-position: center; /* You can adjust the position as needed */
+  background-repeat: no-repeat; /* Prevent image from repeating */
 }
   
 .right {
@@ -103,10 +107,6 @@ img {
   margin-left: 10%;
   padding-bottom: 5px;
   border-radius: 25px;
-  background-image: url('/Pictures/Contrastbox.png');
-  background-size: 40% 80%; /* You can set the size as you prefer */
-  background-position: center; /* You can adjust the position as needed */
-  background-repeat: no-repeat; /* Prevent image from repeating */
 }
   
 .accordion {
