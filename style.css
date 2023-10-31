@@ -1,6 +1,6 @@
 body {
   background-image: url('/Pictures/Runesrepohub.png');
-  background-size: 100% 100%; /* You can set the size as you prefer */
+  background-size: contain; /* You can set the size as you prefer */
   background-position: center; /* You can adjust the position as needed */
   background-repeat: no-repeat; /* Prevent image from repeating */
   font-family:Verdana;
