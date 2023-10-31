@@ -146,7 +146,10 @@ img {
   
 .panel {
   padding: 0 18px;
-  background-color: #5e0000;
+  background-image: url('/Pictures/Contrastbox.png');
+  background-size: cover; /* You can set the size as you prefer */
+  background-position: center; /* You can adjust the position as needed */
+  background-repeat: no-repeat; /* Prevent image from repeating */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
