@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Proxmox Self Hosting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="overskift">
+  <h1>Project Proxmox Self Hosting</h1>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="https://runesrepohub.github.io/RPH-Docs/">Wiki</a>
+    <a href="https://github.com/RunesRepoHub/">Repo</a>
+  </nav>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <h2>Links and Sources:</h2>
+    <div class="links">
+    <a href="#">Template 1</a>
+    <a href="#">Template 2</a>
+    <a href="#">Template 3</a>
+    <a href="#">Template 4</a>
+    <a href="#">Template 5</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <h1>Small Homelab</h1>
+    <div class="products-box">
+    <h3>How and what to look out for when build a small homelab?</h3>
+    <br>
+    <img src="/Pictures/proxmox-logo.webp" alt="Artwork">
+  </div>
+  <br>
+    <div class="products-box">
+    <p>When build a small homelab that don't use a huge amount of power, there is quiet a few things to look out for.</p>
+    <p>Here is a list of things I would look out for when building a small homelab:</p>
+    <p> - Always use the most power efficient CPU that can live up to the requirements.</p>
+    <p> - Make sure that you configure the VMs and other workloads to ony run when it is needed</p>
+    <p> - Make sure that can "compress" your system into a smaller size (The ability to compress critcal VMs and service is important to keep power use low by running more things pr VM)</p>
+  </div>
+  <br>
+    <div class="products-box">
+    <p></p>
+  </div>
+    
+
+  </div>
+
+  <div class="right">
+    <h2>Low Power Server</h2>
+    <button class="accordion">Server Hardware</button>
+    <div class="panel">
+      <p> - AMD Ryzen 5 3600A CPU - 6 kerner 3.6 GHz - AMD AM4</p>
+      <p> - Corsair Vengeance LPX DDR4-3200 C16 BK DC - 32GB</p>
+      <p> - ASRock A520M-HVS Bundkort - AMD A520 - AMD AM4 soc</p>
+      <p> - DUTZO PS450W V2 Strømforsyning - 450 Watt - 120 mm</p>
+      <p> - Kingston SSDNow A400 SSD - 120GB</p>
+      <p> - Kingston SSDNow A400 SSD - 480GB</p>
+
+      <p> - Akyga AK995BK Tårn ATX Ingen strømforsyning Sort</p>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="footer">Hosted By RPH</div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+</body>
+</html>
+
